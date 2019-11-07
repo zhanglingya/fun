@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(73, 76, 71);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .main {
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff;
+    position: relative;
+
+    .top {
+      height: 50%;
+      background-color: #ffffff;
+
+      .head {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 20px;
+
+        .head-left {
+          font-size: 15px;
+          color: rgb(176, 53, 49);
+        }
+
+        .head-middle {
+          font-size: 15px;
+          color: rgb(213, 222, 221);
+        }
+
+        .head-right {
+          display: flex;
+          font-size: 15px;
+          color: black;
+          align-items: center;
+
+          img {
+            width: 20px;
+            height: 20px;
+            margin: 3px 10px 0 0;
+          }
+        }
+      }
+
+    }
+
+    .foot {
+      height: 50%;
+      background-color: rgb(176, 81, 57);
+
+    }
+
+    .bottom {
+      position: relative;
+      height: 20%;
+      z-index: 2;
+
+      div {
+        width: 300px;
+        height: 100%;
+        position: absolute;
+        top: 170px;
+        right: 20px;
+        background-color: rgb(240, 240, 240);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          color: black;
+          padding: 0 10px;
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+
+  .middle {
+    height: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    right: 15%;
+
+    .circle {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 2px solid rgb(176, 53, 49);
+
+      .word {
+        width: 50px;
+        font-size: 12px;
+        position: absolute;
+        top: 20%;
+        right: 20%;
+
+        .word-top {
+          color: rgb(176, 53, 49);
+        }
+
+        .word-bottom {
+          color: black;
+        }
+      }
+    }
+  }
+
+
+  .img {
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+    top:55%;
+    left:20%;
+    li{
+      display: inline-block;
+      margin-right: 50px;
+    }
+    a{
+      position: absolute;
+      z-index: 2;
+      text-decoration: none;
+      top: 45%;
+      display: none;
+     
+    }
+    
+  }
+
+ 
+  .slipe {
+    z-index: 3;
+
+    .news {
+      position: absolute;
+      z-index: 1;
+      width: 30%;
+      top: 70%;
+      left: 15%;
+      font-size: 20px;
+      color: white;
+    }
+
+    .fortune {
+      height: 20%;
+      position: absolute;
+      z-index: 2;
+      top: 43%;
+      left: 15%;
+      font-size: 70px;
+      font-weight: bold;
+      color: rgb(177, 156, 98);
+    }
+
+    .constellation {
+      height: 50%;
+      width: 30%;
+      position: absolute;
+      z-index: 2;
+      top: 30%;
+      left: 15%;
+      font-size: 13px;
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+
+
+}
